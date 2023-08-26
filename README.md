@@ -49,7 +49,7 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
 # RTL simulation
 
-  # Tools used:
+  # Tools used
 
   1. iVerilog: It is a compiler. After compilation it generates a .vcd file which is used for simualtion.
   2. GTKWave: It is a simulator, which is used to view the simulation of our design.
@@ -67,7 +67,7 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
   GUI of GTKWave will pop-up, in there you can view your simulation.
       
-  # Sidenote:
+  # Sidenote
   To obtain the .vcd file you will have to add these lines in your testbench.
   
       $dumpfile("tb_my_design.vcd");
@@ -77,7 +77,7 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
 # Synthesis
 
-  # Tool used:
+  # Tool used
   
 Yosys: Open-source synthesis tool for designing digital circuits. Transforms RTL code into optimized gate-level representation.
   
