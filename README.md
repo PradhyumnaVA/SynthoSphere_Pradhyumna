@@ -11,8 +11,7 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 # Logical operations instruction
 ![Screenshot from 2023-08-26 08-09-59](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/3f882291-926f-425d-a030-a6047ebb4c4a)
 ![Screenshot from 2023-08-26 08-10-22](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/04ea2944-7328-4253-964a-a3440f48ec02)
-
-
+![Screenshot from 2023-08-26 08-15-03](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/87cb0293-265e-48a1-bf46-7ed58edb01be)
 
 # ALU Control lines | Function
 
