@@ -6,7 +6,8 @@ A 32-bit RISC-V processor is a modern open-source CPU design adhering to the RIS
 With a streamlined instruction set and multiple privilege levels, it suits various applications from embedded systems to high-performance computing.
 
 
-                 ![Processor](            https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/8003f12f-dc45-4340-84c8-b98ab642a1f6)
+                 ![Processor](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/8003f12f-dc45-4340-84c8-b98ab642a1f6)
+                 
 
 
 
