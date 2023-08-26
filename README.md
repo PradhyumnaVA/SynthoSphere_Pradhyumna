@@ -8,6 +8,33 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
 ![Processor](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/dcc5ef7f-33b6-440e-a59f-aba015e16b2a)
 
+# Logical operations instruction
+![Screenshot from 2023-08-26 08-09-59](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/3f882291-926f-425d-a030-a6047ebb4c4a)
+![Screenshot from 2023-08-26 08-10-22](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/04ea2944-7328-4253-964a-a3440f48ec02)
+
+
+
+# ALU Control lines | Function
+
+    0000    Bitwise-AND
+
+    0001    Bitwise-OR
+
+    0010	 Add (A+B)
+
+    0100	 Subtract (A-B)
+
+    1000	 Set on less than
+
+    0011    Shift left logical
+
+    0101    Shift right logical
+
+    0110    Multiply
+
+    0111    Bitwise-XOR
+        
+
 # RTL Design
 
 1. [PROCESSOR.v](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/blob/61b441b95a73d3ea6c70b50f48c145e0dbc437c1/PROCESSOR.v)
