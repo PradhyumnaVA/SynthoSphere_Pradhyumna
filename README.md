@@ -18,7 +18,20 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 # Testbech
 [Processor_tb.v](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/blob/2e4918735cd26404a398d84173a5b8c89b7cca3c/Processor_tb.v)
 
-    
+# Synthesis
+# Commands for synthesis
+    yosys
+    read_liberty -lib <relative or abs path>/ lib file 
+    read_verilog <top.v> 
+    synth -top <topmodule of top.v> -flatten
+    dfflibmap -liberty <relative or abs path>/ lib file  
+    abc -liberty <relative or abs path>/ lib file ( generates results on ur design → netlist verify them before continuing)
+    show <topmodule of top.v>
+    write_verilog <netlist_file_name>.v  OR    write_verilog -noattr  <netlist_file_name>.v
+
+![Screenshot from 2023-08-26 06-08-14](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/0a9995b6-d813-4c7b-b846-f21ff5d132c7)
+
+
 
 
 
