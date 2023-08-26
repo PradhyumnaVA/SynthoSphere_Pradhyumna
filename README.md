@@ -23,11 +23,38 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
 # RTL simulation
 
-![pre_synthesis_waveform](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/ca9e1d04-7e31-4f8b-b550-58f159f7eb53)
+  # Tools used:
 
+  1. iVerilog: It is a compiler. After compilation it generates a .vcd file which is used for simualtion.
+  2. GTKWave: It is a simulator, which is used to view the simulation of our design.
+
+  # Commands for Pre-synthesis work
+
+      iverilog my_design.v tb_my_design.v      # Compile Verilog files
+      ./a.out                                  # Run simulation
+      
+  .vcd file will be generated after these commands, it while be saved in the same directory. 
+  
+  To simulate the .vcd file GTKWave should be run.
+
+      gtkwave tb_my_design.vcd
+
+  GUI of GTKWave will pop-up, in there you can view your simulation.
+      
+  # Sidenote:
+  To obtain the .vcd file you will have to add these lines in your testbench.
+  
+      $dumpfile("tb_my_design.vcd");
+      $dumpvars(0,tb_module);
+
+![pre_synthesis_waveform](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/ca9e1d04-7e31-4f8b-b550-58f159f7eb53)
 
 # Synthesis
 
+  # Tool used:
+  
+Yosys: Open-source synthesis tool for designing digital circuits. Transforms RTL code into optimized gate-level representation.
+  
   # Commands for synthesis
     
     yosys
@@ -42,10 +69,14 @@ With a streamlined instruction set and multiple privilege levels, it suits vario
 
 # Synthesis output
 
-I have used the "flatten" command along with synthesis command thus hierarchy isn't shown.
-The "flatten" command in digital design refers to a process where the hierarchical structure of a design is removed, and all modules and instances are brought to the top level. This results in a single flat design without any hierarchy.
+After synthesis is completed, the generated netlist is dumped into a .v file so that we can simalute it and check if it matchs the pre-synthesis outputs. The netlist file is given below.
+
+[Generated Netlist ](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/blob/290ac2d855df325a8d95eed526516c749937ed74/netlist_risc.v)
 
 Netlist: the logic of the file is implemented using these components.
+
+I have used the "flatten" command along with synthesis command thus hierarchy isn't shown.
+The "flatten" command in digital design refers to a process where the hierarchical structure of a design is removed, and all modules and instances are brought to the top level. This results in a single flat design without any hierarchy.
 
 ![Screenshot from 2023-08-26 06-09-17](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/a705d332-8d02-4db4-a142-23f1dc0ce056)
 
@@ -68,6 +99,8 @@ After "opt -purge" command is run.
 # GLS Simulation
 
 ![Screenshot from 2023-08-26 06-42-31](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/1813cd62-8e2b-4724-a765-a24bbadb6a86)
+
+It is difficult to determine the working of RISCV processor post-synthesis. The pc unit and the alu_control signals are working properly. I'm reading up on RISCV documentation to figure out how to determine the outputs and confirm the proper functioning of RISCV processor post-synthesis.
 
 
 
