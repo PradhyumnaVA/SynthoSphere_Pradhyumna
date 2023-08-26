@@ -47,7 +47,7 @@ The "flatten" command in digital design refers to a process where the hierarchic
 
 Netlist: the logic of the file is implemented using these components.
 
-![Screenshot from 2023-08-26 06-08-14](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/0a9995b6-d813-4c7b-b846-f21ff5d132c7)
+![Screenshot from 2023-08-26 06-09-17](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/a705d332-8d02-4db4-a142-23f1dc0ce056)
 
 My RTL design is very bulky, so design time would have been very high if i would have synthesised it normally. Thus to decrease the synthesis time i gave "flatten" command. 
 One more advantage is number of wires used has decreased drastically, thus synthesised design will look a bit simpler.
@@ -68,6 +68,10 @@ After "opt -purge" command is run.
 # GLS Simulation
 
 ![Screenshot from 2023-08-26 06-42-31](https://github.com/PradhyumnaVA/SynthoSphere_Pradhyumna/assets/137704414/1813cd62-8e2b-4724-a765-a24bbadb6a86)
+
+
+
+
 
 
 
